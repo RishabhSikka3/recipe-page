@@ -1,2 +1,81 @@
-body {
+@font-face {
+  font-family: "Outfit Regular";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Outfit SemiBold";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Outfit Bold";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "YoungSerif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+}
+
+:root {
+  --primary-font: "Outfit Regular", sans-serif;
+  --secondary-font: "YoungSerif", sans-serif;
+  --semibold-font: "Outfit SemiBold", sans-serif;
+  --bold-font: "Outfit Bold", sans-serif;
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: var(--stone-600);
+  background-color: var(--stone-100);
+}
+
+.text-bold {
+  font-family: var(--bold-font);
+}
+
+.text-semibold {
+  font-family: var(--semibold-font);
+  font-family: 1.25rem;
+  line-height: 100%;
+  color: var(--rose-800);
+}
+
+.heading-text {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  line-height: 100%;
+  color: var(--stone-900);
+}
+
+.sub-heading {
+  font-family: var(--secondary-font);
+  font-size: 1.75rem;
+  line-height: 100%;
+  color: var(--brown-800);
 }
