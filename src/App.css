@@ -1,5 +1,12 @@
+/* Divider */
 hr.divider {
   border-top: 1px solid var(--stone-150);
+}
+
+/* Mobile-first layout */
+.container {
+  padding: 0;
+  min-height: auto;
 }
 
 @media (min-width: 375px) {
@@ -14,94 +21,84 @@ hr.divider {
   }
 }
 
+/* Card */
 .container .card {
   margin: auto;
   width: 100%;
-  height: auto;
   max-width: 736px;
+  height: auto;
   padding: 2.5rem;
   background-color: var(--white);
-  text-align: left;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   gap: 2.5rem;
+  text-align: left;
 }
 
+/* Banner Image */
 .card .banner-img {
-  border-radius: 0.75rem;
   width: 100%;
   max-width: 656px;
   max-height: 300px;
   object-fit: contain;
+  border-radius: 0.75rem;
+}
+
+/* Content Sections */
+.card .content,
+.content .title,
+.content .preparation,
+.content .ingredients,
+.content .instructions,
+.content .nutrition {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .card .content {
-  display: flex;
-  flex-flow: column wrap;
   gap: 2rem;
 }
 
 .content .title {
-  display: flex;
-  flex-flow: column wrap;
   gap: 1.5rem;
 }
 
 .content .preparation {
   background-color: var(--rose-50);
   padding: 1.5rem;
-  display: flex;
-  flex-flow: column wrap;
   gap: 1rem;
 }
 
-.content .preparation ul {
+.content .ingredients,
+.content .instructions,
+.content .nutrition {
+  gap: 1.5rem;
+}
+
+/* Lists */
+.content .preparation ul,
+.content .ingredients ul,
+.content .instructions ol {
   padding-left: 1.5rem;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
+.content .preparation ul li,
+.content .ingredients ul li,
+.content .instructions ol li {
+  padding-left: 1rem;
+}
+
+/* List Markers */
 .content .preparation ul li::marker {
   color: var(--rose-800);
 }
 
-.content .preparation ul li {
-  padding-left: 1rem;
-}
-
-.content .ingredients {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 1.5rem;
-}
-
-.content .ingredients ul {
-  padding-left: 1.5rem;
-  display: flex;
-  flex-flow: column wrap;
-  gap: 0.5rem;
-}
-
 .content .ingredients ul li::marker {
   color: var(--brown-800);
-}
-
-.content .ingredients ul li {
-  padding-left: 1rem;
-}
-
-.content .instructions {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 1.5rem;
-}
-
-.content .instructions ol {
-  padding-left: 1.5rem;
-  display: flex;
-  flex-flow: column wrap;
-  gap: 0.5rem;
 }
 
 .content .instructions ol li::marker {
@@ -109,35 +106,25 @@ hr.divider {
   font-family: var(--bold-font);
 }
 
-.content .instructions ol li {
-  padding-left: 1rem;
-}
-
-.content .nutrition {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 1.5rem;
-}
-
+/* Nutrition Section */
 .content .nutrition ul {
-  padding: 0 2rem;
   list-style: none;
+  padding: 0 2rem;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   gap: 0.75rem;
 }
 
 .content .nutrition ul li {
-  padding-bottom: 0.75rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-gap: 1rem;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--stone-150);
 }
 
 .content .nutrition ul li:last-child {
-  padding-bottom: 0rem;
+  padding-bottom: 0;
   border: none;
 }
 
