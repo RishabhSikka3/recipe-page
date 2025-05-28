@@ -1,6 +1,5 @@
-hr {
-  background-color: var(--stone-150);
-  height: 1px;
+hr.divider {
+  border-top: 1px solid var(--stone-150);
 }
 
 @media (min-width: 375px) {
@@ -129,10 +128,17 @@ hr {
 }
 
 .content .nutrition ul li {
+  padding-bottom: 0.75rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-gap: 1rem;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.content .nutrition ul li:last-child {
+  padding-bottom: 0rem;
+  border: none;
 }
 
 .content .nutrition ul li .values {

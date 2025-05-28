@@ -65,7 +65,7 @@ function App() {
             </p>
           </section>
           <section className="preparation">
-            <h3 className="text-semibold">Preparation time</h3>
+            <h2 className="text-semibold">Preparation time</h2>
             <ul>
               {preparationSteps.map((step, index) => (
                 <li key={index}>
@@ -84,7 +84,7 @@ function App() {
             </ul>
           </section>
 
-          <hr />
+          <hr className="divider" />
 
           <section className="instructions">
             <h2 className="sub-heading">Instructions</h2>
@@ -97,7 +97,7 @@ function App() {
             </ol>
           </section>
 
-          <hr />
+          <hr className="divider" />
 
           <section className="nutrition">
             <h2 className="sub-heading">Nutrition</h2>
@@ -112,7 +112,6 @@ function App() {
                     <span>{item.label}</span>
                     <span className="values">{item.value}</span>
                   </li>
-                  {index < nutrition.length - 1 && <hr />}
                 </React.Fragment>
               ))}
             </ul>

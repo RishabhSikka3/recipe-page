@@ -61,7 +61,7 @@ html {
 
 .text-semibold {
   font-family: var(--semibold-font);
-  font-family: 1.25rem;
+  font-size: 1.25rem;
   line-height: 100%;
   color: var(--rose-800);
 }
