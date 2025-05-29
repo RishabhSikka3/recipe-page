@@ -1,4 +1,4 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - Recipe Page solution
 
 This is a solution to the [Social Links Profile card challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-recipe-page-using-css-flexbox-and-grid-nJzuNBNXN2). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -18,7 +18,7 @@ This is a solution to the [Social Links Profile card challenge on Frontend Mento
 
 ### Screenshot
 
-![Screenshot of the QR Code Component](./screenshot.png)
+![Screenshot of the Recipe Page](./screenshot.png)
 
 ### Links
 
